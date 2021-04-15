@@ -9,6 +9,7 @@ type Server struct {
 	http *http.Server
 }
 
+
 func Start(port string, handler http.Handler) error {
 	server := Server{http: &http.Server{
 		Addr:              ":" + port,
